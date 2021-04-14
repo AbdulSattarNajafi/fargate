@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:700|Open+Sans|Cairo");
-@font-face {
-  font-family: "HelveticaNeueBold";
-  src: url("../fonts/helveticaneue-bold.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/helveticaneue-bold.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/helveticaneue-bold.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/helveticaneue-bold.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/helveticaneue-bold.svg#svgFontName") format("svg"); /* Legacy iOS */
-}
+
 .col-lg-1,
 .col-lg-2,
 .col-lg-3,
@@ -149,31 +140,7 @@ hr.normal {
     55% 0%;
   min-height: 315px;
 }
-.page #header.header_01 {
-  background: url("../images/layout/header_visual_page_01.jpg") no-repeat scroll
-    55% 0%;
-  min-height: 140px;
-}
-.page #header.header_02 {
-  background: url("../images/layout/header_visual_page_02.jpg") no-repeat scroll
-    55% 0%;
-  min-height: 140px;
-}
-.page #header.header_03 {
-  background: url("../images/layout/header_visual_page_03.jpg") no-repeat scroll
-    55% 0%;
-  min-height: 140px;
-}
-.page #header.header_04 {
-  background: url("../images/layout/header_visual_page_04.jpg") no-repeat scroll
-    55% 0%;
-  min-height: 140px;
-}
-.page #header.header_05 {
-  background: url("../images/layout/header_visual_page_05.jpg") no-repeat scroll
-    55% 0%;
-  min-height: 140px;
-}
+
 #header .contain-cs .right {
   color: #ffffff;
   line-height: 100%;
@@ -599,70 +566,36 @@ hr.normal {
   text-decoration: none;
   /* safari hack */
 }
-.btn-open:after {
-  color: #333333;
-  content: "\f394";
-  font-family: "Ionicons";
-  -webkit-transition: all 0.2s linear 0s;
-  -moz-transition: all 0.2s linear 0s;
-  -o-transition: all 0.2s linear 0s;
-  transition-property: all 0.2s linear 0s;
-}
-.btn-open:hover:after {
-  color: #ffffff;
-}
-.btn-close:after {
-  color: #373737;
-  content: "\f2d7";
-  font-family: "Ionicons";
-  -webkit-transition: all 0.2s linear 0s;
-  -moz-transition: all 0.2s linear 0s;
-  -o-transition: all 0.2s linear 0s;
-  transition-property: all 0.2s linear 0s;
-}
-.btn-close:hover:after {
-  color: #363636;
-}
 
 /* OPEN / CLOSE BTNS */
 .menu-btn {
   position: absolute;
-  top: 20px;
+  top: 12px;
   right: 20px;
   z-index: 999;
   display: inline;
-  font-size: 32px;
+  font-size: 50px;
 }
-.menu-btn a {
-  display: inline-block;
+.menu-btn .btn-open {
+  display: flex;
   text-decoration: none;
   /* safari hack */
-  font-size: 53px;
-  font-weight: bold;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
   outline: 0;
 }
-.btn-open:after {
-  color: #ffffff;
-  content: "\f394";
-  font-family: "Ionicons";
-  -webkit-transition: all 0.2s linear 0s;
-  -moz-transition: all 0.2s linear 0s;
-  -o-transition: all 0.2s linear 0s;
-  transition-property: all 0.2s linear 0s;
+.menu-btn a:hover,
+.menu-btn a:focus {
+  color: #fff;
 }
-.btn-open:hover:after {
-  color: #ffffff;
+.menu-btn .btn-open > .times_icon {
+  display: none;
 }
-.btn-close:after {
-  color: #373737;
-  content: "\f2d7";
-  font-family: "Ionicons";
-  -webkit-transition: all 0.2s linear 0s;
-  -moz-transition: all 0.2s linear 0s;
-  -o-transition: all 0.2s linear 0s;
-  transition-property: all 0.2s linear 0s;
+.menu-btn .btn-close > .bars_icon {
+  display: none;
 }
-.btn-close:hover:after {
+.menu-btn .times_icon .fa-times {
   color: #363636;
 }
 .overlay {
@@ -907,11 +840,11 @@ hr.normal {
     min-height: 319px;
     margin: 0px -30px;
   } */
-  .page #header {
+  /* .page #header {
     background: url("../images/layout/header_visual_page_01_.jpg") no-repeat
       scroll 70% 0%;
     min-height: 100px;
-  }
+  } */
   .body-middle.no-line {
     background: none;
   }
